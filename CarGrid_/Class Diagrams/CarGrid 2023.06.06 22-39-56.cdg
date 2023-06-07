@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CarGrid">
+  <ClassDiagramComponents>
+    <Class name="Archivos" package="" visibility="public" xPosition="214.0" yPosition="153.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="guardarArchivo" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Vehiculo" name="auto"/>
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+        <Method name="guardarArchivo" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Pieza" name="pieza"/>
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+        <Method name="guardarCliente" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Clientes" name="cliente"/>
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+        <Method name="leerArchivoPieza" returnType="Pieza" visibility="public" isStatic="true">
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+        <Method name="leerCliente" returnType="Clientes" visibility="public" isStatic="true">
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+        <Method name="leerVehiculoCCV" returnType="Vehiculo" visibility="public" isStatic="true">
+          <Argument type="String" name="rutaArchivo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Automovil" package="" visibility="public" xPosition="989.0" yPosition="271.0">
+      <Fields>
+        <Field name="tipoCombustible" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="String" name="ano"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="tDv"/>
+          <Argument type="String" name="tipoCombustible"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="obtenerDetallesEspecificos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CargarVenta" package="" visibility="public" xPosition="2056.0" yPosition="39.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="clienteRegistrado" package="" visibility="public" xPosition="1982.0" yPosition="495.0">
+      <Fields>
+        <Field name="cliente" type="Clientes" visibility="private"/>
+        <Field name="ApellidoTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Cerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Eliminar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="NombreTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="RFCTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Clientes" name="cliente"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="EliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="CerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Clientes" package="" visibility="public" xPosition="464.0" yPosition="681.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="RFC" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="RFC"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getRFC" returnType="String" visibility="public"/>
+        <Method name="setRFC" returnType="void" visibility="public">
+          <Argument type="String" name="RFC"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="" visibility="public" xPosition="3536.0" yPosition="1186.0">
+      <Fields>
+        <Field name="Ayuda" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="NuevaPieza" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="NuevoCliente" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="RegPiezas" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="RegistoClientes" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="RegistrarNuevoVehiculo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="Salir" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="VentaAuto" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="VentaMoto" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="VentaPieza" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="VentasGuardadas" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="VerAutoGuardado" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu4" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu5" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu7" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem5" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JPopupMenu.Separator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JPopupMenu.Separator" visibility="private"/>
+        <Field name="jSeparator3" type="javax.swing.JPopupMenu.Separator" visibility="private"/>
+        <Field name="jSeparator4" type="javax.swing.JPopupMenu.Separator" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="AyudaMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="SalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RegistrarNuevoVehiculoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VerAutoGuardadoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="NuevaPiezaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RegPiezasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="NuevoClienteActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RegistoClientesActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VentaMotoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VentaPiezaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VentaAutoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VentasGuardadasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Motocicleta" package="" visibility="public" xPosition="2010.0" yPosition="1127.0">
+      <Fields>
+        <Field name="Cilindraje" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="String" name="ano"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="tDv"/>
+          <Argument type="String" name="Cilindraje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="Cilindraje"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCilindraje" returnType="String" visibility="public"/>
+        <Method name="setCilindraje" returnType="void" visibility="public">
+          <Argument type="String" name="Cilindraje"/>
+        </Method>
+        <Method name="obtenerDetallesEspecificos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NuevaVenta" package="" visibility="public" xPosition="31.0" yPosition="1540.0">
+      <Fields>
+        <Field name="rutaArchivo1" type="String" visibility="private"/>
+        <Field name="rutaArchivo2" type="String" visibility="private"/>
+        <Field name="cliente" type="Clientes" visibility="private"/>
+        <Field name="vehiculo" type="Vehiculo" visibility="private"/>
+        <Field name="pieza" type="Pieza" visibility="private"/>
+        <Field name="Precio" type="String" visibility="private"/>
+        <Field name="textoVehiculo" type="String" visibility="private"/>
+        <Field name="textoCliente" type="String" visibility="private"/>
+        <Field name="textoPrecio" type="String" visibility="private"/>
+        <Field name="Cerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="ClienteTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="PrecioReg" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="UsoMultiple" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="VehiculoTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Clientes" name="cliente"/>
+          <Argument type="Vehiculo" name="vehiculo"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Clientes" name="cliente"/>
+          <Argument type="Pieza" name="pieza"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="GuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="generarSelloAprobacion" returnType="String" visibility="private"/>
+        <Method name="guardarArchivoCCV" returnType="void" visibility="private">
+          <Argument type="String" name="contenido"/>
+        </Method>
+        <Method name="CerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="PrecioRegKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pieza" package="" visibility="public" xPosition="20.0" yPosition="994.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="nombrePieza" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="tDv" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="nombrePieza"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="String" name="tDv"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getNombrePieza" returnType="String" visibility="public"/>
+        <Method name="setNombrePieza" returnType="void" visibility="public">
+          <Argument type="String" name="nombrePieza"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="gettDv" returnType="String" visibility="public"/>
+        <Method name="settDv" returnType="void" visibility="public">
+          <Argument type="String" name="tDv"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="piezaRegistrada" package="" visibility="public" xPosition="719.0" yPosition="1088.0">
+      <Fields>
+        <Field name="pieza" type="Pieza" visibility="private"/>
+        <Field name="nombreArchivo" type="String" visibility="private"/>
+        <Field name="Cerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Eliminar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="EstadoTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="MarcaTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ModeloTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="TDVTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Pieza" name="pieza"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="CerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RegInventarioAutos" package="" visibility="public" xPosition="2818.0" yPosition="39.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="ano" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="tDv" type="String" visibility="private"/>
+        <Field name="tCC" type="String" visibility="private"/>
+        <Field name="tDc" type="String" visibility="private"/>
+        <Field name="Anno" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Cerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Color" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Marca" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Modelo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="MultiUsos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="SelectorCombus" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="SelectorEstado" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="SelectorTipo" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="TamanoCilindraje" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="CerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ModeloActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SelectorTipoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="MarcaKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="ModeloKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="AnnoKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="ColorKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="SelectorEstadoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SelectorCombusActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="TamanoCilindrajeKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RegInventarioPiezas" package="" visibility="public" xPosition="3536.0" yPosition="561.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="nombreDePieza" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="tDv" type="String" visibility="private"/>
+        <Field name="Cerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Marca" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="SelectorTipo" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="nombrePieza" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="serialNo" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="GuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SelectorTipoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="MarcaKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="nombrePiezaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nombrePiezaKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="CerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="serialNoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="serialNoKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="registrarCliente" package="" visibility="public" xPosition="3536.0" yPosition="39.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="RFC" type="String" visibility="private"/>
+        <Field name="Guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="GuardarApellido" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="GuardarNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="GuardarRFC" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="SalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarNombreKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarApellidoKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarRFCKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="GuardarRFCActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="" visibility="public" isAbstract="true" xPosition="1892.0" yPosition="1540.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="ano" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="tDv" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="String" name="ano"/>
+          <Argument type="String" name="estado"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="tDv"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getAno" returnType="String" visibility="public"/>
+        <Method name="setAno" returnType="void" visibility="public">
+          <Argument type="String" name="ano"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="gettDv" returnType="String" visibility="public"/>
+        <Method name="settDv" returnType="void" visibility="public">
+          <Argument type="String" name="tDv"/>
+        </Method>
+        <Method name="obtenerDetallesEspecificos" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="vehiculoRegistrado" package="" visibility="public" xPosition="2670.0" yPosition="1389.0">
+      <Fields>
+        <Field name="vehiculo" type="Vehiculo" visibility="private"/>
+        <Field name="nombreArchivo" type="String" visibility="private"/>
+        <Field name="AnoTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ColorTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Eliminar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="EstadoTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="MarcaTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ModeloTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="TDVTxt" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="UsoMultiple" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Varios" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Vehiculo" name="vehiculo"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="EliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="getdatos" package="" visibility="public" xPosition="1781.0" yPosition="977.0">
+      <Methods>
+        <Method name="obtenerDetallesEspecificos" returnType="String" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cliente" source="NuevaVenta" target="Clientes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculo" source="vehiculoRegistrado" target="Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Vehiculo" target="getdatos"/>
+    <HasRelation name="cliente" source="clienteRegistrado" target="Clientes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Archivos" target="Pieza" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Automovil" target="Vehiculo"/>
+    <HasRelation name="pieza" source="NuevaVenta" target="Pieza" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pieza" source="piezaRegistrada" target="Pieza" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Archivos" target="Vehiculo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Motocicleta" target="Vehiculo"/>
+    <UseRelation source="Archivos" target="Clientes" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculo" source="NuevaVenta" target="Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
